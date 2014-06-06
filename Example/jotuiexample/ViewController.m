@@ -35,36 +35,36 @@
     jotManager = [JotStylusManager sharedInstance];
     
     [jotManager addShortcutOptionButton1Default: [[JotShortcut alloc]
-                                                  initWithShortDescription:@"Next Color"
+                                                  initWithDescriptiveText:@"Next Color"
                                                   key:@"nc"
                                                   target:self selector:@selector(nextColor)]];
     
     
     [jotManager addShortcutOptionButton2Default: [[JotShortcut alloc]
-                                                  initWithShortDescription:@"Previous Color"
+                                                  initWithDescriptiveText:@"Previous Color"
                                                   key:@"pc"
                                                   target:self selector:@selector(previousColor)]];
     
     [jotManager addShortcutOption: [[JotShortcut alloc]
-                                    initWithShortDescription:@"Increase Stroke Width"
+                                    initWithDescriptiveText:@"Increase Stroke Width"
                                     key:@"isw"
                                     target:self selector:@selector(increaseStrokeWidth)
                                     repeatRate:100]];
     
     [jotManager addShortcutOption: [[JotShortcut alloc]
-                                    initWithShortDescription:@"Decrease Stroke Width"
+                                    initWithDescriptiveText:@"Decrease Stroke Width"
                                     key:@"dsw"
                                     target:self selector:@selector(decreaseStrokeWidth)
                                     repeatRate:100]];
         
     [jotManager addShortcutOption: [[JotShortcut alloc]
-                                    initWithShortDescription:@"Undo"
+                                    initWithDescriptiveText:@"Undo"
                                     key:@"undo"
                                     target:self selector:@selector(undo)
                                     repeatRate:100]];
     
     [jotManager addShortcutOption: [[JotShortcut alloc]
-                                    initWithShortDescription:@"Redo"
+                                    initWithDescriptiveText:@"Redo"
                                     key:@"redo"
                                     target:self selector:@selector(redo)
                                     repeatRate:100]];
